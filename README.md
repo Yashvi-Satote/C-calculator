@@ -2,10 +2,6 @@
 
 A menu-driven calculator built in **C** that goes beyond basic arithmetic. This project is designed to combine common mathematical operations, number utilities, and conversion tools into one simple console application.
 
-> 🚧 This project is currently under development. New features and improvements are being added regularly.
-
----
-
 ## ✨ Features
 
 ### 🧮 Basic Calculator
@@ -14,14 +10,14 @@ A menu-driven calculator built in **C** that goes beyond basic arithmetic. This 
 - ✖️ Multiplication
 - ➗ Division
 
-### 🔢 Number Utilities *(In Progress)*
+### 🔢 Number Utilities
 - Reverse a Number
 - Count Digits
 - Sum of Digits
 - Greatest Common Divisor (GCD)
 - Lowest Common Multiple (LCM)
 
-### 📚 Mathematical Programs *(Planned)*
+### 📚 Mathematical Programs
 - Multiplication Table
 - Sum of First N Natural Numbers
 - Sum of Odd Numbers
@@ -59,45 +55,12 @@ Future updates will include:
 
 ---
 
-## ▶️ How to Run
-
-Compile:
-
-```bash
-gcc main.c -o main
-```
-
-Run:
-
-```bash
-./main
-```
-
-On Windows:
-
-```bash
-main.exe
-```
-
----
-
 ## 📂 Project Structure
 
 ```
 main.c
 README.md
 ```
-
----
-
-## 🚀 Future Improvements
-
-- Better input validation
-- Improved user interface
-- Cross-platform compatibility
-- Scientific calculator functions
-- File handling for calculation history
-- Cleaner code using modular programming
 
 ---
 
