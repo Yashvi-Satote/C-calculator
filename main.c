@@ -70,7 +70,7 @@ void Devide(){
         printf("Cannot devide by zero.");
         return;
     }
-    printf("\nSum of both numbers is: %d", a/b);
+    printf("\nDivision of both numbers is: %d", a/b);
 
     printf("\n\nPress enter...");
     getch();
@@ -143,10 +143,45 @@ void sumDig(){
 }
 
 void gcd(){
+    printf("\n---GREATEST COMMON DIVISOR---\n");
+    int a,b,dev=1;
+    printf("\n Enter no. 1: ");
+    scanf("%d", &a);
+
+    printf("\n Enter no. 2: ");
+    scanf("%d", &b);
+
+    for(int i=2; i<=a && i<=b; i++){
+        if(a%i == 0 && b%i == 0){
+            dev=i;
+        }
+    }
+    
+    printf("\nGreatest common devisor is: %d", dev);
+    printf("\n\nPress enter...");
+    getch();
     
 }
 
 void lcm(){
+    printf("\n---LEAST COMMON MULTIPLE---\n");
+    int result,a,b;
+
+    printf("\n Enter no. 1: ");
+    scanf("%d", &a);
+
+    printf("\n Enter no. 2: ");
+    scanf("%d", &b);
+
+    for(int i=a ;; i++){
+        if(i%a==0 && i%b==0 ){
+            result=i;
+            break;
+        }
+    }
+    printf("\nLeast common multiple is: %d", result);
+    printf("\n\nPress enter...");
+    getch();
     
 }
 
@@ -243,16 +278,11 @@ int main(){
         printf("\n 6: Count Digits."); //done
         printf("\n 7: Sum of digits."); //done
         printf("\n 8: Greatest common devisor (GCD)");
-        printf("\n 9: Lowest common multiple (LCM)");
+        printf("\n 9: Least common multiple (LCM)");
         printf("\n 10: Multiplication Table"); //done
         printf("\n 11: Sum of first N natural numbers"); //done
         printf("\n 12: Sum of all odd no. till N"); //done
         printf("\n 13: Sum of all even no. till N"); //done
-        printf("\n 14: List of all factors of a number");
-        printf("\n 15: nth Fibonacci number ");
-        printf("\n 16: Electricity Bill Calculator");
-        printf("\n 17: Square Root");
-        printf("\n 18: Power of n");
         printf("\n 0: Exit program");
 
         printf("\n\n Enter choice: ");
